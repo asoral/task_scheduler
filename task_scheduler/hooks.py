@@ -31,8 +31,8 @@ app_license = "MIT"
 # page_js = {"page" : "public/js/file.js"}
 
 # include js in doctype views
-# doctype_js = {"doctype" : "public/js/doctype.js"}
-# doctype_list_js = {"doctype" : "public/js/doctype_list.js"}
+doctype_js = {"Project" : "public/custom_project.js",
+			"Task" : "public/js/custom_task.js"}
 # doctype_tree_js = {"doctype" : "public/js/doctype_tree.js"}
 # doctype_calendar_js = {"doctype" : "public/js/doctype_calendar.js"}
 
@@ -96,12 +96,12 @@ app_license = "MIT"
 # Hook on document methods and events
 
 # doc_events = {
-# 	"*": {
-# 		"on_update": "method",
-# 		"on_cancel": "method",
-# 		"on_trash": "method"
-#	}
-# }
+#  	"Project": {
+# 		"refresh": "task_scheduler.task_scheduler.custom_pjoject.task",
+# # 		"on_cancel": "method",
+# # 		"on_trash": "method"
+# 	}
+#  }
 
 # Scheduled Tasks
 # ---------------
